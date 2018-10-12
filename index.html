@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yang Ah Kang and Sons</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<script src="http://www.youtube.com/player_api"></script>
+</head>
+<body>
+<img class="openbtn" src="Assest/menub.svg" width="16" alt="menu" onclick="openMenu()">
+	
+<ul id="menu">
+	<img src="Assest/close.svg" width="16" alt="close" class="closebtn" onclick="closeMenu()">
+	<div>
+	<li data-menuanchor="home" class="active"><a href="#home">HOME</a></li>
+	<li data-menuanchor="aboutUs"><a href="#aboutUs">ABOUT US</a></li>
+	<li data-menuanchor="gallery"><a href="#gallery">GALLERY</a></li>
+	<li data-menuanchor="clients"><a href="#clients">CLIENTS</a></li>
+	<li data-menuanchor="contactUs"><a href="#contactUs">CONTACT US</a></li>
+	</div>
+</ul>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="https://v.ftcdn.net/02/05/02/23/700_F_205022301_uCcwet8De61MHAacOo4ERt7eDdEVFF2z_ST.mp4" type="video/mp4">
+		</video>
+		<div class="cols">
+			<a href="#home"><img class="logo" src="Assest/logow.svg" width="165" alt="logow"></a>	
+  	  	 	<h1 id="headline">a leading manufacturer of custom-made furniture</h1>	
+		</div>
+		<hr>
+	</div>
+	<div class="section" id="section1">
+		<div class="cols">
+			<a href="#home"><img class="logo" src="Assest/logob.svg" width="165" alt="logob"></a>
+			<h1 class="highLight">ABOUT US</h1>	
+			<div class="subTitile">
+				<button class="tabLinks defaultOpen" onclick="changeTab(event, 'intro', 'tabContent', 'tabLinks')">Introduction</button>
+				<hr>
+				<button class="tabLinks" onclick="changeTab(event, 'success', 'tabContent', 'tabLinks')">Success Formular</button>
+			</div>
+		</div>
+		<hr class="verline">
+		<p id="intro" class="tabContent">
+			Yang Ah Kang began as a little furniture workshop in 1946 in Pasir Panjang servicing the British Forces as our main client. 
+<br><br>Our first hotel client was Goodwood Park. As we created a reputation for excellent service and quality, growth in the 50s became rapid for us. In the years to come, York Hotel, Hyatt, The Shangri-la, and the Grand Old Dame, Raffles Hotel was added to the list. 
+<br><br>In 1992, a factory in Sungei Kadut was set up to meet with increasing demand and growth in the industry. A year after that, our China factory was established as a full fledged subsidiary of YAK Singapore and was positioned to undertake major projects in Suzhou and Shanghai with strategic alliances formed in Chedun-Songjiang District. 
+<br><br>YAK began gaining trajectory by the mid 90s to make headways into Japan, New Zealand, London, Dubai and in USA for our custom made furniture.</p>
+		<p id="success" class="tabContent">
+			<span>Listening</span>
+			<br><br>Listening is our foremost priority. This helps us to work collaboratively with our Clients and alliances for the best outcomes and beautiful results. Relationships are highly valued, and we have built many great ones over the years.
+			<br><br><br>
+			<span>Attention to Detail</span>
+			<br><br>From the design plan to scheduling, from cost control to construction and timely delivery, we engage in a 7-step project management process to keep tab of our project every step of the way. Clients have our 100% commitment in ensuring excellent execution every time.
+			<br><br><br>
+			<span>Investment</span>
+			<br><br>
+			We believe in investing in our talents, infrastructure and state-of-the-art production machinery, thereby providing good people working with great tools for excellent results.
+		</p>
+		<div class="extSide">
+			<div class="coverLayer" onClick="aboutUsOpenSide()"></div>
+			<img src="Assest/closebtn2.svg" width="24" alt="close" class="closebtn" onclick="closeSide()">
+			<div id="imgCenter"></div>
+			<div style="height: 100%; width:100%; background-color: #c4c4c4; opacity: .25; position: absolute; z-index: 1;"></div>
+			<div id="imgUp"></div>
+			<div id="imgDown"></div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="cols">
+			<a href="#home"><img class="logo" src="Assest/logow.svg" width="165" alt="logow"></a>
+			<h1 class="highLight">gallery</h1>
+			<p class="description">This segment showcases YAK’s work in creating exquisite wall panels lining hotel lobbies to comfortable guestrooms, poolside cabanas and luxurious spas. Also featured are beautifully crafted customised pieces shipped halfway around the world.</p>
+		</div>
+		
+		<div class="boxItems">	
+			<div class="items ">
+				<a href="Gallery.html">
+					<div class="item item1">
+						<div class="pic" id="picture1"></div>
+						<div class="caption">
+							<p>Goodwood Park Hotel</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item2">
+						<div class="pic" id="picture2"></div>
+						<div class="caption">
+							<p>Sentosa Resort and Spa</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item3">
+						<div class="pic" id="picture3"></div>
+						<div class="caption">
+							<p>Mandarin Oriental</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item4">
+						<div class="pic" id="picture4"></div>
+						<div class="caption">
+							<p>Holiday Inn Orchard Centre</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item5">
+						<div class="pic" id="picture5"></div>
+						<div class="caption">
+							<p>Goodwood Park Hotel</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item6">
+						<div class="pic" id="picture6"></div>
+						<div class="caption">
+							<p>Sentosa Resort and Spa</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+				<a href="Gallery.html">
+					<div class="item item7">
+						<div class="pic" id="picture7"></div>
+						<div class="caption">
+							<p>Mandarin Oriental</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>	
+				<a href="Gallery.html">
+					<div class="item item8">
+						<div class="pic" id="picture8"></div>
+						<div class="caption">
+							<p>Holiday Inn Orchard Centre</p>
+							<h5>Singapore</h5>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="cols">
+			<a href="#home"><img class="logo" src="Assest/logob.svg" width="165" alt="logob"></a>
+			<h1 class="highLight">CLIENTS</h1>	
+			<div class="subTitile">
+				<button class="logoLinks defaultOpen" onclick="changeLogo(event, 'domestic', 'container', 'logoLinks')">Singapore</button>
+				<hr>
+				<button class="logoLinks" onclick="changeLogo(event, 'overseas', 'container', 'logoLinks')">Overseas</button>
+			</div>
+			<p class="description">Since the day Yang Ah Kang & Sons opened its doors, our most valuable asset has always been our client relationships. Whether an architectural firm, interior design firm, developer, corporation, hotel or private individual, we strive to make every client feel as if they are our most important client – which, of course, they are.</p>
+		</div>
+		<hr class="verline">
+		<div class="boxItems">
+			<div id="domestic" class="container">
+				<div class="grid">
+					<div><img src="Assest/Logo (1).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (2).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (3).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (4).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (5).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (6).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (7).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (8).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (9).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (10).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (11).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (12).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (13).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (14).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (15).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (16).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (17).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (18).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (1).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (2).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (3).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (4).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (5).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (6).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (7).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (8).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (9).jpg" width="100%" draggable="false"></div>
+				</div>
+			</div>
+			<div id="overseas" class="container">
+					<div class="grid">
+					<div><img src="Assest/Logo (10).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (11).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (12).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (13).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (14).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (15).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (16).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (17).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (18).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (1).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (2).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (3).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (4).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (5).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (6).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (7).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (8).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (9).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (10).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (11).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (12).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (13).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (14).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (15).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (16).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (17).jpg" width="100%" draggable="false"></div>
+					<div><img src="Assest/Logo (18).jpg" width="100%" draggable="false"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="section" id="section4">
+		<div class="cols">
+				<a href="#home"><img class="logo" src="Assest/logow.svg" width="165" alt="logow"></a>
+				<h1 class="highLight">Contact Us</h1>				
+				<div class="description">
+					<button class="mapLinks defaultOpen" onClick="changeMap(event, 'Sing',  'mapContent', 'mapLinks')">Singapore</button>
+					<pre>Ah Kang & Sons Pte Ltd
+4 Sungei Kadut Street 5, Singapore</pre>
+					<pre>phone: (65) 6365 6511
+fax: (65) 6365 5355
+e-mail: yak@yak.com.sg
+website: www.yak.com.sg</pre>
+				  	
+					<hr size="1">
+					<button class="mapLinks" onClick="changeMap(event, 'China',  'mapContent', 'mapLinks')">China</button>					
+					<pre>Shanghai Yang Ah Kang Decoration Engineering Co Ltd
+
+2 Xinyang Road, Xinqiao Town, Songjiang District, Shanghai 201612, People's Republic China</pre>
+					<pre>phone: (86-21) 5764 6133/6533 
+fax: (86-21) 5764 5476
+e-mail: yak@yak.sh.cn
+website: www.yak.sh.cn</pre>
+					
+					<hr style="margin: 24px 0 12px 0;" size="1">
+					
+					<h5>© Copyright 2018 1650studio.co All Rights Reserved.</h5>
+				</div>
+		</div>
+		<hr class="verline">
+		<div class="openForm" onClick="openForm()"></div>
+		<div class="formInfo">
+			<img src="Assest/closebtn2.svg" width="24" alt="close" class="closebtn" onClick="closeForm()">
+			<p id="hi">HI THERE!</p>
+			<form action="/action_page.php" method="post">
+				<div class="field">
+					<input type="text" id="fullName" name="fullName" placeholder=" " oninput="check(this)" required />
+					<label for="fullName">Full Name</label>
+					<span class="bar"></span>
+					<span class="requirements">Input your name.</span>
+				</div>
+				<div class="field">
+					<input type="email" id="email" name="email" placeholder=" " required/>
+					<label for="email">Email</label>
+					<span class="bar"></span>
+					<span class="requirements">Must be a valid email address.</span>
+				</div>
+				<div class="field">
+					<input type="text" id="phoneNumber" name="phoneNumber" placeholder=" " pattern="[0-9]+" required />
+					<label for="phoneNumber">Phone number</label>
+					<span class="bar"></span>
+					<span class="requirements">Enter your phone number.</span>
+				</div>
+				<div class="field">
+					<input type="text" id="message" name="message" placeholder=" " required >
+					<label for="message">Message</label>
+					<span class="bar"></span>
+					<span class="requirements">Input your message.</span>
+				</div>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+			<div class="extSide">
+				<div class="coverLayer" onClick="contactOpenSide()">
+					<img src="Assest/placeholder.svg" width="40" alt="placeholder">
+				</div>				
+					<img src="Assest/closebtn2.svg" width="24" alt="close" class="closebtn" onClick="closeSide()">
+				
+				<div id="Sing" class="mapContent">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5858077598577!2d103.74625831488079!3d1.4241899989613236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da126bb9e3f2ef%3A0x3b6bcc524cc4fdec!2s4+Sungei+Kadut+Street+5%2C+Singapore+728951!5e0!3m2!1sen!2s!4v1536634871976" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>	
+				<div id="China" class="mapContent">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.9163773350647!2d121.33840831524849!3d31.08425298151605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b261e2edf90e07%3A0x61a39e9090311812!2sXinmin+Park+of+Xinqiao+Town%2C+Songjiang+District!5e0!3m2!1sen!2s!4v1536634967656" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['home', 'aboutUs', 'gallery', 'clients', 'contactUs'],
+        menu: '#menu'
+    });
+</script>
+
+
+</body>
+</html>
