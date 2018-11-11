@@ -132,7 +132,7 @@ if (window.matchMedia("(min-width: 1366px)").matches){
 		extSide[1].style.left = "calc(100%/3)";
 
 		var closebtn = document.getElementsByClassName("closebtn");
-		closebtn[2].style.display = "block";
+		closebtn[3].style.display = "block";
 }}
 if (window.matchMedia("(min-width: 1920px)").matches){
 	function contactOpenSide(){
@@ -144,7 +144,7 @@ if (window.matchMedia("(min-width: 1920px)").matches){
 		extSide[1].style.left = "calc(100%/16*5)";
 
 		var closebtn = document.getElementsByClassName("closebtn");
-		closebtn[2].style.display = "block";
+		closebtn[3].style.display = "block";
 }}
 //openForm-section4
 if (window.matchMedia("(min-width: 320px)").matches){
@@ -201,7 +201,7 @@ if (window.matchMedia("(min-width: 1366px)").matches){
 		
 		var closebtn = document.getElementsByClassName("closebtn");
 		closebtn[1].style.display = "none";
-		closebtn[2].style.display = "none";
+		closebtn[3].style.display = "none";
 		}
 }
 if (window.matchMedia("(min-width: 1920px)").matches){
@@ -217,7 +217,7 @@ if (window.matchMedia("(min-width: 1920px)").matches){
 
 		var closebtn = document.getElementsByClassName("closebtn");
 		closebtn[1].style.display = "none";
-		closebtn[2].style.display = "none";
+		closebtn[3].style.display = "none";
 		}
 }
 //section2-galleryExtendSlide
