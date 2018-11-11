@@ -122,12 +122,13 @@
 		background-size: cover;
 		width: 100%;
 		height: 100%;
+        overflow: hidden;
 	}
 	#section0 #headline{
 		margin: 0;
 		position: absolute;
 		left: 8.33%;
-		bottom: 92px;
+		bottom: 10%;
 		width: 25%;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -159,7 +160,7 @@
 		margin: 0;
 		position: absolute;
 		left: calc(100%/12);
-		top: 200px;
+		top: 25%;
 		width: 25%;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -167,7 +168,7 @@
 	#section1 .subTitile{
 		position: absolute;
 		left: calc(100%/12);
-		top: 282px;
+		top: 37%;
 		width: 25%;
 	}
 	#section1 .subTitile button{
@@ -187,7 +188,7 @@
 	#section1 .subTitile hr{
 		border: none;
 		border-top: solid 1px rgba(230,53,52,.5);
-		margin: 24px 0;
+		margin: 1em 0;
 		width: 100%;
 	}
 	#section1 .verline{
@@ -203,7 +204,7 @@
 	#section1 .tabContent{
 		position: absolute;
 		left: 37%;
-		top: 282px;
+		top: 37%;
 		margin: 0;
 		width: 37%;
 		-webkit-animation: fadeEffect .5s;
@@ -281,7 +282,7 @@
 	#section2 .cols hr{
 		border: none;
 		border-top: solid 1px rgba(242,242,242,.25);
-		margin: 24px 0;
+		margin: 1em 0;
 		width: 100%;
 		height: 50%;
 	}
@@ -300,7 +301,7 @@
 		margin: 0;
 		position: absolute;
 		left: calc(100%/12);
-		top: 200px;
+		top: 25%;
 		width: 25%;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -308,15 +309,15 @@
 	#section2 .description{
 		position: absolute;
 		left: calc(100%/12);
-		top: 286px;
+		top: 37%;
 		margin: 0;
-		width: 22%;
+		width: 20%;
 		font-weight: 100;
 	}
 	#section2 .subTitile{
 		position: absolute;
 		left: calc(100%/12);
-		top: 282px;
+		top: 37%;
 		width: 25%;
 	}
 	#section2 pre{
@@ -324,7 +325,7 @@
 		text-transform: lowercase;
 		position: absolute;
 		left: 37%;
-		top: 200px;
+		top: 25%;
 		font-family: Lato;
 		font-size: .875em;
 		width: 37%;
@@ -345,7 +346,7 @@
 -moz-user-select: none;
 -o-user-select: none;
 user-select: none;
-		top: 200px;
+		top: 25%;
 		width: 100%;
 		height: 65.5%;
 		position: absolute;
@@ -408,7 +409,7 @@ user-select: none;
 		height: 15%;
 		bottom: 0;
 		position: absolute;
-		padding: 12px;
+		padding: 1em;
 	}
 	#section2 .caption p{
 		color: #333;
@@ -438,7 +439,7 @@ user-select: none;
 		margin: 0;
 		position: absolute;
 		left: calc(100%/12);
-		top: 200px;
+		top: 25%;
 		width: 25%;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -446,7 +447,7 @@ user-select: none;
 	#section3 .subTitile{
 		position: absolute;
 		left: calc(100%/12);
-		top: 282px;
+		top: 37%;
 		width: 25%;
 	}
 	#section3 .subTitile button{
@@ -466,7 +467,7 @@ user-select: none;
 	#section3 .subTitile hr{
 		border: none;
 		border-top: solid 1px rgba(230,53,52,.5);
-		margin: 24px 0;
+		margin: 1em 0;
 		width: 100%;
 	}
 	#section3 .verline{
@@ -482,9 +483,9 @@ user-select: none;
 	#section3 .description{
 		position: absolute;
 		left: calc(100%/12);
-		top: 434px;
+		top: 56%;
 		margin: 0;
-		width: 22%;
+		width: 20%;
 	}
 	#section3 .boxItems{
 		width: calc(100%/6*4);
@@ -496,7 +497,7 @@ user-select: none;
 	}
 	#section3 .container{
 		left: 5.5%;
-		top: 200px;
+		top: 25%;
 		width: 94.5%;
 		height: 65.5%;
 		white-space: nowrap;
@@ -561,7 +562,7 @@ user-select: none;
 		margin: 0;
 		position: absolute;
 		left: calc(100%/12);
-		top: 200px;
+		top: 25%;
 		width: 25%;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -569,7 +570,7 @@ user-select: none;
 	#section4 .description{
 		position: absolute;
 		left: calc(100%/12);
-		top: 286px;
+		top: 37%;
 		margin: 0;
 		width: 25%;
 	}
@@ -583,7 +584,7 @@ user-select: none;
 	#section4 .description hr{
 		border: none;
 		border-top: solid 1px rgba(242,242,242,.5);
-		margin: 24px 0 24px 0;
+		margin: 1em 0;
 	}
 	#section4 .description h5{
 		opacity: .5;
@@ -592,7 +593,7 @@ user-select: none;
 	#section4 .formInfo{
 		position: absolute;
 		width: 37%;
-		top: 286px;
+		top: 37%;
 		left: 37%;
 	}
 	#section4 .formInfo .closebtn{
@@ -1631,7 +1632,7 @@ user-select: none;
 		bottom: 0;
 		top:0;
 		width: 100%;
-		height: 100%;
+        height: 100%;
 		background-size: 100% 100%;
   		background-image: url(https://v.ftcdn.net/02/05/02/23/700_F_205022301_uCcwet8De61MHAacOo4ERt7eDdEVFF2z_ST.mp4);/* our video */
   		background-position: center center;
