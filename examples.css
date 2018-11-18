@@ -14,8 +14,8 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
-/*1366px*/
-@media only screen and (min-width: 1366px){
+/*1024px*/
+@media only screen and (min-width: 1024px){
 	body{
 		font-family: Lato, Roboto;
 		color: #333;
@@ -47,38 +47,47 @@
 	}
 	.openbtn{
 		position: fixed;
-		top: 36px;
-		right: 36px;
+		top: 2em;
+		right: 2em;
 		z-index: 1;
+        cursor: pointer;
 	}
 	#menu li{
 		font-size: 1.125em;
 		letter-spacing: .112em;
 		color: #000;
+        background: #E63534;
+        transition: .1s;
 	}
 	#menu li.active{
-		background: rgba(230,53,52,1);
+		background: #E63534;
 	}
 	#menu li a{
 		text-decoration:none;
 		color: #f2f2f2;
 		display: block;
+        opacity: .75;
 	}
 	#menu li:hover{
-		color: rgba(230,53,52,1);
-		background: rgba(255,255,255,.1);
+		color: #f2f2f2;
+		background: #231919;
 	}
-	#menu li.active a:hover{
-		background: rgba(230,53,52,1);
+	#menu li.active a:hover, #menu li.active:hover{
+		background: #E63534;
 		cursor: default;
 	}
+    #menu li a:hover{
+        opacity: 1;
+    }
 	#menu li a,
 	#menu li.active a{
-		padding: 4px 16px;
+		padding: .4em 2em;
 	}
 	#menu li.active a{
 		color: #F2F2F2;
-		font-weight: 900;
+		font-weight: 400;
+        text-transform: uppercase;
+        opacity: 1;
 	}
 	#menu{
 		white-space: nowrap;
@@ -91,7 +100,7 @@
 		padding: 0;
 		margin: 0;
 		background: rgba(230,53,52,1);
-		text-align: right;
+		text-align: left;
 		overflow: hidden;
 		transition: all .3s ease;
 		display: flex;
@@ -101,12 +110,14 @@
 	}
 	#menu .closebtn{
 		position: absolute;
-		top: 36px;
-		right: 36px;
+		top: 2em;
+		left: 2em;
+        cursor: pointer;
 	}
 	#menu div{
 		position: absolute;
-		right: 20px;
+		left: 0;
+        width: 100%;
 	}
 	.cols{
 		width: calc(100%/6);
@@ -177,13 +188,14 @@
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #333;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.5em;
 	}
 	#section1 .subTitile button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section1 .subTitile hr{
 		border: none;
@@ -374,7 +386,7 @@ user-select: none;
 	}
 	#section2 .pic{
 		width: 100%;
-		height: 85%;
+		height: 100%;
 		top: 0;
 		position: absolute;
 		background-size: cover;
@@ -406,10 +418,12 @@ user-select: none;
 	#section2 .caption{
 		background-color: #fff;
 		width: 100%;
-		height: 15%;
+/*		height: 15%;*/
 		bottom: 0;
 		position: absolute;
-		padding: 1em;
+		padding: .5em .75em;
+        white-space: normal;
+        word-wrap: break-word;
 	}
 	#section2 .caption p{
 		color: #333;
@@ -424,7 +438,7 @@ user-select: none;
 		font-weight: 400;
 	}
 	#section2 .boxItems ::-webkit-scrollbar {
-		height: 3px;
+		height: 2px;
 	}
 	#section2 .boxItems ::-webkit-scrollbar-thumb {
 		background: #E63534; 
@@ -456,13 +470,14 @@ user-select: none;
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #333;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.5em;
 	}
 	#section3 .subTitile button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section3 .subTitile hr{
 		border: none;
@@ -511,16 +526,15 @@ user-select: none;
 		animation: fadeEffect .5s;
 	}
 	#section3 .boxItems ::-webkit-scrollbar {
-		height: 3px;
+		height: 2px;
 	}
 	#section3 .boxItems ::-webkit-scrollbar-thumb {
 		background: #E63534; 
 	}
 	#section3 .grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+		grid-template-columns: repeat(9, 1fr);
 		grid-auto-rows: 1fr;
-		width: 80rem;
 		grid-gap: 5px;
 	}
 	#section3 .grid::before {
@@ -534,9 +548,10 @@ user-select: none;
 	 	grid-row: 1 / 1;
 		grid-column: 1 / 1;
 	}
-	#section3 .grid > * {
- 		
-	}
+    #section3 .grid img{
+        width: 8rem;
+    }
+
 	/*contactPage-section4*/
 	#section4 .verline{
 		margin: 0;
@@ -695,6 +710,7 @@ user-select: none;
 		font-size: .75em;
 		margin-top: 2px;
 	}
+/*
 	#section4 input[type=submit]{
 		width: 100%;
 		background-color: #E63534;
@@ -710,19 +726,44 @@ user-select: none;
 	#section4 input[type=submit]:hover{
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 	}
+*/
+    #section4 .android-btn {
+          border: none;
+          width: 100%;
+          display: inline-block;
+          font-weight: 400;
+          font-size: 1.125em;
+          background: #E63534;
+          color: #f2f2f2;
+          height: 42px;
+          line-height: 42px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          transition: all 0.2s ease-in;
+          -webkit-transition: all 0.2s ease-in;
+          margin-top: 48px;
+    }
+    #section4 .android-btn:hover{
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    #section4 .android-btn.click {
+          background: #bc2a2a;
+    }
 	#section4 .description button{
 		background-color: rgba(0,0,0,0);
 		border: none;
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #F2F2F2;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.125em;
 	}
 	#section4 .description button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section4 .coverLayer{
 		position: absolute;
@@ -735,7 +776,6 @@ user-select: none;
 	#section4 .coverLayer:hover{
 		background-color: rgba(230,53,52,0);
 	}
-
 	#section4 .coverLayer img{
 		position: absolute;
 		top:45%;
@@ -764,10 +804,10 @@ user-select: none;
 		width: 100%;
 		height: 100%;
 	}
-}/*1366px*/
+}/*1024px*/
 @media only screen and (min-width: 1920px){
 	body{
-		font-size: 20px;	
+		font-size: 24px;	
 	}
 	.cols{
 		width: calc(100%/16);
@@ -831,6 +871,8 @@ user-select: none;
 	#section2 .description{
 		top: 35%;
 		left: calc(100%/16);
+        text-align: justify;
+        width: 22%;
 	}
 	#section2 .boxItems{
 		width: calc(100%/16*11);
@@ -840,9 +882,14 @@ user-select: none;
 		top: 25%;
 		width: 100%;
 	}
+/*
 	#section2 .item{
 		width: 20%;
 	}
+*/
+    #section2 .caption{
+        height: 15%;
+    }
 	#section3 .highLight{
 		top: 25%;
 		left: calc(100%/16);
@@ -857,17 +904,21 @@ user-select: none;
 	}
 	#section3 .grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+		grid-template-columns: repeat(9, 1fr));
 		grid-auto-rows: 1fr;
-		width: 100rem;
 		grid-gap: 10px;
 	}
+    #section3 .grid img{
+        width: 13rem;
+    }
 	#section3 .verline{
 		left: calc(100%/16*5);
 	}
 	#section3 .description{
 		top: 50%;
 		left: calc(100%/16);
+        text-align: justify;
+        width: 22%;
 	}
 	#section4 .highLight{
 		top: 25%;
@@ -895,12 +946,17 @@ user-select: none;
     	transform: translateY(-50%) translateX(-40%);
 		width: 60px;
 	}
+    #section4 .description pre{
+        width: 80%;
+    }
 }/*1920px*/
-@media only screen and (min-width : 120px) and (max-width : 1365px){
+@media only screen and (min-width : 120px) and (max-width : 1023px){
 	body{
 		font-size: 14px;
 		font-family: Lato;
 		color: #333;
+         margin: 0;
+        padding: 0;
 	}
 	.openbtn{
 		position: fixed;
@@ -920,22 +976,26 @@ user-select: none;
 		text-decoration:none;
 		color: #f2f2f2;
 		display: block;
+        opacity: .75;
 	}
 	#menu li:hover{
 		color: rgba(230,53,52,1);
-		background: rgba(255,255,255,.1);
+		background: #231919;
 	}
 	#menu li.active a:hover{
 		background: rgba(230,53,52,1);
 		cursor: default;
+        opacity: 1;
 	}
 	#menu li a,
 	#menu li.active a{
-		margin: 8px 0;
+		padding: .4em 2em;
 	}
 	#menu li.active a{
 		color: #F2F2F2;
-		font-weight: 900;
+		font-weight: 400;
+        opacity: 1;
+        text-transform: uppercase;
 	}
 	#menu{
 		white-space: nowrap;
@@ -996,6 +1056,7 @@ user-select: none;
 		background-size: cover;
 		width: 100%;
 		height: 100%;
+        overflow: hidden;
 	}
 	#section0 #headline{
 		margin: 0;
@@ -1036,14 +1097,15 @@ user-select: none;
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #333;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.5em;
 		display: inline-block;
 	}
 	#section1 .subTitile button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section1 .tabContent{
 		position: absolute;
@@ -1124,7 +1186,7 @@ user-select: none;
 -moz-user-select: none;
 -o-user-select: none;
 user-select: none;
-		width: 96%;
+		width: 100%;
 		height: 100%;
 		position: absolute;
 		white-space: nowrap;
@@ -1201,7 +1263,7 @@ user-select: none;
 		font-weight: 400;
 	}
 	#section2 .boxItems ::-webkit-scrollbar {
-		height: 3px;
+		height: 2px;
 	}
 	#section2 .boxItems ::-webkit-scrollbar-thumb {
 		background: #E63534; 
@@ -1233,9 +1295,9 @@ user-select: none;
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #333;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 1.5em;
 		display: inline-block;
 	}
@@ -1244,6 +1306,7 @@ user-select: none;
 	}
 	#section3 .subTitile button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section3 .subTitile hr{
 		display: none;
@@ -1278,18 +1341,20 @@ user-select: none;
 		animation: fadeEffect .5s;
 	}
 	#section3 .boxItems ::-webkit-scrollbar {
-		height: 3px;
+		height: 2px;
 	}
 	#section3 .boxItems ::-webkit-scrollbar-thumb {
 		background: #E63534; 
 	}
 	#section3 .grid{
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+		grid-template-columns: repeat(9, 1fr);
 		grid-auto-rows: 1fr;
-		width: 70rem;
 		grid-gap: 5px;
 	}
+    #section3 .grid img{
+        width: 8rem;
+    }
 	#section3 .grid::before {
 		content: '';
 		width: 0;
@@ -1300,9 +1365,6 @@ user-select: none;
 	#section3 .grid > *:first-child {
 	 	grid-row: 1 / 1;
 		grid-column: 1 / 1;
-	}
-	#section3 .grid > * {
- 		
 	}
 	#section4 .verline{
 	display: none;
@@ -1336,7 +1398,7 @@ user-select: none;
 	#section4 .description pre{
 		margin: 12px 0 0 0;
 		font-family: Lato;
-		font-size: .875em;
+/*		font-size: .875em;*/
 		white-space: pre-wrap;
 		font-weight: 100;
 	}
@@ -1479,6 +1541,7 @@ user-select: none;
 		font-size: .75em;
 		margin-top: 2px;
 	}
+/*
 	#section4 input[type=submit]{
 		width: 100%;
 		background-color: #E63534;
@@ -1494,19 +1557,44 @@ user-select: none;
 	#section4 input[type=submit]:hover{
 		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 	}
+*/
+    #section4 .android-btn {
+          border: none;
+          width: 100%;
+          display: inline-block;
+          font-weight: 400;
+          font-size: 1.125em;
+          background: #E63534;
+          color: #f2f2f2;
+          height: 42px;
+          line-height: 42px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          transition: all 0.2s ease-in;
+          -webkit-transition: all 0.2s ease-in;
+          margin-top: 48px;
+    }
+    #section4 .android-btn:hover{
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    #section4 .android-btn.click {
+          background: #bc2a2a;
+    }
 	#section4 .description button{
 		background-color: rgba(0,0,0,0);
 		border: none;
 		padding: 0;
 		cursor: pointer;
 		outline: none;
-		color: #F2F2F2;
+		color: #8a8585;
 		font-family: Lato;
-		font-weight: 700;
-		font-size: 1.125em;
+		font-weight: 400;
+		font-size: 1.5em;
 	}
 	#section4 .description button.active {
 		color: #E63534;
+        font-weight: 700;
 	}
 	#section4 .extSide .closebtn{
 		position: absolute;
@@ -1553,7 +1641,7 @@ user-select: none;
 		display: none;
 	}
 }
-@media only screen and (min-width : 120px) and (max-width : 1365px) and (orientation:landscape){
+@media only screen and (min-width : 120px) and (max-width : 1023px) and (orientation:landscape){
 	body{
 		height: 100%;
 		width: 100%;
@@ -1605,9 +1693,11 @@ user-select: none;
 		padding: 0;
 	}
 	#section3 .grid{
-		grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-    	width: 232rem;
+		grid-template-columns: repeat(14, 1fr);
 	}
+    #section3 .grid img{
+        width: 5rem;
+    }
 	#section4 .highLight{
 		top: 22%;
 	}
