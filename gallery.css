@@ -198,7 +198,7 @@
 	#section0 .column{
 		position: absolute;
 		top: 25%;
-		right: 36px;
+		right: 2em;
 	}
 	#section0 .column:after{
 		content: "";
@@ -256,6 +256,9 @@
 		right: 40px;
 		width: 24px;
 	}
+    #section0 .column{
+        right: 40px;
+    }
     #section0 .container{
         width: calc(100%/16*11);
         left: calc(100%/16*5);
