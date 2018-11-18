@@ -276,8 +276,8 @@
 	#section1 .extSide .closebtn{
 		position: absolute;
 		z-index: 8;
-		top: 36px;
-		left: 36px;
+		top: 2em;
+		left: 2em;
 		display: none;
 	}
 	/*galleryPage-section2*/
@@ -785,8 +785,8 @@ user-select: none;
 	#section4 .extSide .closebtn{
 		position: absolute;
 		z-index: 1;
-		top: 36px;
-		left: 36px;
+		top: 2em;
+		left: 2em;
 		display: none;
 		background-color: #333333;
 		border-radius: 18px;
@@ -864,6 +864,10 @@ user-select: none;
 	#section1 .verline{
 		left: calc(100%/16*5);
 	}
+    #section1 .extSide .closebtn{
+		top: 4%;
+		left: 4%;
+	}
 	#section2 .highLight{
 		top: 25%;
 		left: calc(100%/16);
@@ -882,6 +886,7 @@ user-select: none;
 		top: 25%;
 		width: 100%;
 	}
+    
 /*
 	#section2 .item{
 		width: 20%;
@@ -948,6 +953,10 @@ user-select: none;
 	}
     #section4 .description pre{
         width: 80%;
+    }
+    #section4 .extSide .closebtn{
+        top: 4%;
+        left: 4%;
     }
 }/*1920px*/
 @media only screen and (min-width : 120px) and (max-width : 1023px){
