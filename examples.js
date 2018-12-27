@@ -1,3 +1,7 @@
+if((window.matchMedia('(min-width: 320px) and (max-width: 1023px)').matches) && (window.innerHeight < window.innerWidth)){
+	document.body.innerHTML = "Please view in Potrait!";
+}
+
 //Menu bar
 if (window.matchMedia("(min-width: 120px)").matches){
 	function openMenu() {
@@ -5,7 +9,7 @@ if (window.matchMedia("(min-width: 120px)").matches){
 		document.getElementById("menu").style.width = "100%";
 		document.getElementById("menu").style.height = "100%";
 }}
-if (window.matchMedia("(min-width: 1024px)").matches){
+if (window.matchMedia("(min-width: 1366px)").matches){
 	function openMenu() {
 		'use strict';
 		document.getElementById("menu").style.width = "calc(100%/6)";
@@ -13,7 +17,7 @@ if (window.matchMedia("(min-width: 1024px)").matches){
 if (window.matchMedia("(min-width: 1920px)").matches){
 	function openMenu() {
 		'use strict';
-		document.getElementById("menu").style.width = "calc(100%/16*3)";
+		document.getElementById("menu").style.width = "calc(100%/16*2)";
 }}
 if (window.matchMedia("(min-width: 120px)").matches){
 	function closeMenu() {
@@ -21,7 +25,7 @@ if (window.matchMedia("(min-width: 120px)").matches){
 		document.getElementById("menu").style.width = "0";
 		document.getElementById("menu").style.height = "0%";
 }}
-if (window.matchMedia("(min-width: 1024px)").matches || window.matchMedia("(min-width: 1920px)").matches){
+if (window.matchMedia("(min-width: 1366px)").matches || window.matchMedia("(min-width: 1920px)").matches){
 	function closeMenu() {
 		'use strict';
   	document.getElementById("menu").style.width = "0";
@@ -76,7 +80,7 @@ document.getElementsByClassName("defaultOpen")[1].click();
 document.getElementsByClassName("defaultOpen")[2].click();
 
 //open section1-aboutUs
-if (window.matchMedia("(min-width: 1024px)").matches){
+if (window.matchMedia("(min-width: 1366px)").matches){
 	function aboutUsOpenSide(){
 	'use strict';
 	var coverLayer = document.getElementsByClassName("coverLayer");
@@ -122,7 +126,7 @@ if (window.matchMedia("(min-width: 320px)").matches){
 		var closebtn = document.getElementsByClassName("closebtn");
 		closebtn[3].style.display = "block";
 }}
-if (window.matchMedia("(min-width: 1024px)").matches){
+if (window.matchMedia("(min-width: 1366px)").matches){
 	function contactOpenSide(){
 		'use strict';
 		var coverLayer = document.getElementsByClassName("coverLayer");
@@ -132,7 +136,7 @@ if (window.matchMedia("(min-width: 1024px)").matches){
 		extSide[1].style.left = "calc(100%/3)";
 
 		var closebtn = document.getElementsByClassName("closebtn");
-		closebtn[3].style.display = "block";
+		closebtn[2].style.display = "block";
 }}
 if (window.matchMedia("(min-width: 1920px)").matches){
 	function contactOpenSide(){
@@ -144,7 +148,7 @@ if (window.matchMedia("(min-width: 1920px)").matches){
 		extSide[1].style.left = "calc(100%/16*5)";
 
 		var closebtn = document.getElementsByClassName("closebtn");
-		closebtn[3].style.display = "block";
+		closebtn[2].style.display = "block";
 }}
 //openForm-section4
 if (window.matchMedia("(min-width: 320px)").matches){
@@ -188,7 +192,7 @@ if (window.matchMedia("(min-width: 320px)").matches){
 		formInfo[0].style.top = "100%";
 	}
 }
-if (window.matchMedia("(min-width: 1024px)").matches){
+if (window.matchMedia("(min-width: 1366px)").matches){
 	function closeSide(){	
 		'use strict';
 		var coverLayer = document.getElementsByClassName("coverLayer");
@@ -201,7 +205,7 @@ if (window.matchMedia("(min-width: 1024px)").matches){
 		
 		var closebtn = document.getElementsByClassName("closebtn");
 		closebtn[1].style.display = "none";
-		closebtn[3].style.display = "none";
+		closebtn[2].style.display = "none";
 		}
 }
 if (window.matchMedia("(min-width: 1920px)").matches){
@@ -217,7 +221,7 @@ if (window.matchMedia("(min-width: 1920px)").matches){
 
 		var closebtn = document.getElementsByClassName("closebtn");
 		closebtn[1].style.display = "none";
-		closebtn[3].style.display = "none";
+		closebtn[2].style.display = "none";
 		}
 }
 //section2-galleryExtendSlide
@@ -284,14 +288,3 @@ for (var i = 0; i < elements.length; i++) {
         e.target.setCustomValidity("");
     };
 }
-//button
-var button = document.getElementById('button');
-button.addEventListener('click', function () {
-  this.setAttribute('class', 'android-btn click');
-  
-  var self = this;
-  setTimeout(function () {
-    self.removeAttribute('class', 'click');
-    self.setAttribute('class', 'android-btn');
-  }, 300)
-});
